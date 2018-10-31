@@ -1,0 +1,84 @@
+<view class='box log-list'>
+  <!-- 导航S -->
+  <view class='boxNav'>
+    <block>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      <text class="userinfo-nickname">{{userInfo.uid}}</text>
+    </block>
+  </view>
+  <!-- 导航E -->
+  <!-- 选项S -->
+  <view class='boxOption'>
+    <view class='boxOption-title'>
+      <text>我的角色</text>
+      <text>></text>
+    </view>
+    <view class='boxOption-conten'>
+      <view class='boxOption-conten-body'>
+        <view class='boxOption-conten-bodyImg'></view>
+        <text>一颗坚强嘚肾</text>
+      </view>
+      <view class='boxOption-conten-body'>
+        <view class='boxOption-conten-bodyImg'></view>
+        <text>一颗坚强嘚肾</text>
+      </view>
+      <view class='boxOption-conten-body'>
+        <view class='boxOption-conten-bodyImg'></view>
+        <text>一颗坚强嘚肾</text>
+      </view>
+     <view class='boxOption-conten-body'>
+        <view class='boxOption-conten-bodyImg'></view>
+        <text>一颗坚强嘚肾</text>
+      </view>
+      
+    </view>
+  </view>
+  <!-- 选项E -->
+  <!-- 列表S -->
+  <view class='boxList'>
+    <view class='boxList-li'>
+      <view class='boxList-li-l'>
+        <view class='boxList-li-icon'></view>
+          <text>我的订单</text>
+      </view>
+      <view class='boxList-li-r'>></view>
+    </view>
+    <view class='boxList-li'>
+      <view class='boxList-li-l'>
+        <view class='boxList-li-icon'></view>
+          <text>我的订单</text>
+      </view>
+      <view class='boxList-li-r'>></view>
+    </view>
+    <view class='boxList-li'>
+      <view class='boxList-li-l'>
+        <view class='boxList-li-icon'></view>
+          <text>我的订单</text>
+      </view>
+      <view class='boxList-li-r'>></view>
+    </view>
+    <view class='boxList-li'>
+      <view class='boxList-li-l'>
+        <view class='boxList-li-icon'></view>
+          <text>我的订单</text>
+      </view>
+      <view class='boxList-li-r'>></view>
+    </view>
+    <view class='boxList-li'>
+      <view class='boxList-li-l'>
+        <view class='boxList-li-icon'></view>
+          <text>我的订单</text>
+      </view>
+      <view class='boxList-li-r'>></view>
+    </view>
+    <view class='boxList-li'>
+      <view class='boxList-li-l'>
+        <view class='boxList-li-icon'></view>
+          <text>我的订单</text>
+      </view>
+      <view class='boxList-li-r'>></view>
+    </view>
+  </view>
+  <!-- 列表E -->
+</view>

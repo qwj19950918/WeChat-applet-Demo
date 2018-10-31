@@ -1,0 +1,56 @@
+<view class='shopBox'>
+  <!-- 轮播S -->
+  <view class='shopBox-banner'>
+    <!--index.wxml-->  
+    <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000" indicator-color='rgba(223,121,122,.5)' indicator-active-color='red'>  
+      <block wx:for="{{movies}}" wx:for-index="index" wx:key='{{index}}'>  
+        <swiper-item>  
+          <image src="{{item.url}}" class="slide-image" mode="aspectFill"/>  
+        </swiper-item>  
+      </block>  
+    </swiper>  
+
+  </view>
+  <!-- 轮播E -->
+  <!-- 九宫格S -->
+  <view class='shopBox-Nav'>
+    <view class='shopBox-Nav-List'>
+      <view class='shopBox-Nav-ListIcon'></view>
+      <text>我的订单</text>
+    </view>
+    <view class='shopBox-Nav-List'>
+      <view class='shopBox-Nav-ListIcon'></view>
+      <text>我的订单</text>
+    </view>
+    <view class='shopBox-Nav-List'>
+      <view class='shopBox-Nav-ListIcon'></view>
+      <text>我的订单</text>
+    </view>
+    <view class='shopBox-Nav-List'>
+      <view class='shopBox-Nav-ListIcon'></view>
+      <text>我的订单</text>
+    </view>
+    <view class='shopBox-Nav-List'>
+      <view class='shopBox-Nav-ListIcon'></view>
+      <text>我的订单</text>
+    </view>
+    <view class='shopBox-Nav-List'>
+      <view class='shopBox-Nav-ListIcon'></view>
+      <text>我的订单</text>
+    </view>
+    <view class='shopBox-Nav-List'>
+      <view class='shopBox-Nav-ListIcon'></view>
+      <text>我的订单</text>
+    </view>
+    <view class='shopBox-Nav-List'>
+      <view class='shopBox-Nav-ListIcon'></view>
+      <text>我的订单</text>
+    </view>
+  </view>
+  <!-- 九宫格E -->
+  <!-- 展示S -->
+  <view class='shopBox-Show'>
+    <image src='http://img02.tooopen.com/images/20141231/sy_78327074576.jpg'></image>
+  </view>
+  <!-- 展示E -->
+</view>

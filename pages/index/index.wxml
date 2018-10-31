@@ -1,0 +1,25 @@
+<!--index.wxml-->
+  <view class="container">
+    <view class="userinfo">
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <block wx:else>
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      </block>
+    </view>
+    <view class="usermotto">
+      <text bindtap='add'>{{numcount}}</text>
+      <text class="user-motto">{{motto}}</text>
+      <span wx:for="{{thisarr}}" wx:key="{{thisarr}}">{{item}}</span>
+      <span wx:for="{{myarr}}" wx:key="{{myarr}}">{{item.name}}{{item.age}}</span>
+      <view wx:if="{{myif == 'apple'}}">apple</view>
+      <view wx:if="{{myif == 'banana'}}">banana</view>
+      <view wx:if="{{myif == 'pear'}}">pear</view>
+    </view>
+    <view class='userNav'>
+      <button bindtap='goNews' data-id='aaaaa'>传参</button>
+      <button bindtap='goFlex'>flex</button>
+      <button bindtap='goShop'>shop</button>
+    </view>
+  </view>
+

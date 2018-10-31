@@ -1,0 +1,48 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/news/news",
+    "pages/props/props",
+    "pages/flexbox/flexbox",
+    "pages/shop/shop",
+    "pages/cake/cake"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "./image/index.png",
+        "iconPath": "./image/indexa.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "./image/shop.png",
+        "iconPath": "./image/shopa.png",
+        "pagePath": "pages/logs/logs",
+        "text": "logs"
+      },
+      {
+        "selectedIconPath": "./image/list.png",
+        "iconPath": "./image/lista.png",
+        "pagePath": "pages/news/news",
+        "text": "news"
+      },
+      {
+        "selectedIconPath": "./image/body.png",
+        "iconPath": "./image/bodya.png",
+        "pagePath": "pages/cake/cake",
+        "text": "cake"
+      }
+    ]
+  }
+}

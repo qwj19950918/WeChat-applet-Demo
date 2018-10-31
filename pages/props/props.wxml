@@ -1,0 +1,21 @@
+<view class='container log-list'>
+  <text>
+    传参：{{baba}}
+  </text>
+  <button bindtap='myfn' data-id='1zzz'>
+    参数
+  </button>
+  <text>
+    {{bobo}}
+  </text>
+  <view>
+    <label wx:for='{{objectArray}}' data-id='{{item.id}}' data-en='{{item.en}}' bindtap='myId' wx:key='{{index}}'>
+      <text>{{item.name}}</text>
+      <text>{{item.id}}</text>
+    </label>
+  </view>
+  <view>
+      <text>{{objectId}}</text>
+      <text>{{objectEn}}</text>
+  </view>
+</view>

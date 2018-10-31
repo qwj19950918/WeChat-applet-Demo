@@ -1,0 +1,28 @@
+<view class="container log-list">
+  <view>
+    选择器
+    <picker range='{{objectArray}}' value='{{index}}' bindchange='thisChange' range-key='name'>
+      <view class="picker">
+        当前选择：{{objectArray[index].name}}
+      </view>
+    </picker>
+  </view>
+  <view>
+    日期选择器
+    <picker mode='date' value='{{date}}' bindchange='myDate'>
+      <view>
+        当前日期：{{date}}
+      </view>
+    </picker>
+  </view>
+  <view>
+    省市区选择器
+    <picker mode='region' bindchange='myRegion' value='{{region}}'>
+      <view class='{{myColor==1?"red":myColor==2?"green":""}}'>
+        当前地区:{{region}}
+      </view>
+    </picker>
+  </view>
+  <view wx:if='{{mystate}}'>拉拉啊A</view>
+  <view hidden='{{mystate}}'>拉拉啊B</view>
+</view>

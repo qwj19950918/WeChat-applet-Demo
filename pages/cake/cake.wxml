@@ -1,0 +1,58 @@
+<view id='cake'>
+  <!-- 滚动条S -->
+  <view class='cake-top'>
+    <view class='cake-top-icon'>
+      <image src='../../image/laba.png'></image>
+    </view>
+    <swiper class="cake-top-swiper"  autoplay="true" interval="5000" duration="1000" circular="true" >  
+      <block wx:for="{{cakeText}}" wx:for-index="index" wx:key='{{index}}'>  
+        <swiper-item>  
+            <view class='cake-top-text'>{{item.text}}</view>
+        </swiper-item>  
+      </block>  
+    </swiper>  
+  </view>
+  <!-- 滚动条E -->
+  <!-- 轮播S -->
+  <view class='cake-banner'>
+      <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000" indicator-color='rgba(223,121,122,.5)' indicator-active-color='red' circular='true'>  
+        <block wx:for="{{cake}}" wx:for-index="index" wx:key='{{index}}'>  
+          <swiper-item>  
+            <image src="{{item.url}}" class="slide-image" mode="aspectFill"/>  
+          </swiper-item>  
+        </block>  
+      </swiper>  
+  </view>
+  <!-- 轮播E -->
+  <!-- 导航S -->
+  <view class='cake-nav'>
+    <scroll-view class="scroll-view_H" scroll-x="true" scroll-with-animation="{{true}}" >
+      <view class='cake-navBox'>
+        <block wx:for='{{cakeNav}}' wx:key='{{index}}'>
+          <view class='cake-navList'>
+            <image src='{{item.url}}'></image>
+            <text>{{item.name}}</text>
+          </view>
+        </block>
+      </view>
+    </scroll-view>
+  </view>
+  <!-- 导航E -->
+  <!-- 展示S -->
+  <view class='cake-show'>
+    <view class='cake-showT'>
+      <view class='cake-showL'> <image src='{{cakeShow[0].url}}'></image></view>
+      <view class='cake-showR'>
+        <view class='cacke-showR-top'><image src='{{cakeShow[1].url}}'></image> </view>
+        <view class='cacke-showR-bottom'><image src='{{cakeShow[2].url}}'></image> </view>
+      </view>
+    </view>
+    <view class='cake-showB'>
+      <view class='cake-showB-top'><image src='{{cakeShow[3].url}}'></image></view>
+      <view class='cake-showB-bottom'><image src='{{cakeShow[4].url}}'></image></view>
+    </view>
+  </view>
+  
+  <!-- 展示E -->
+
+</view>
